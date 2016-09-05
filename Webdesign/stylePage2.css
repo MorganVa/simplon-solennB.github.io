@@ -1,0 +1,45 @@
+body {
+  font-family: Helvetica;
+  }
+
+  #captureEcran {
+  margin-left:5px;
+}
+
+.imagesAnimation {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width:33%;
+  height: 250px;
+  width:395px;
+}
+
+div {
+  display: inline;
+  position: relative;
+}
+#anim2 {
+  top:100px;
+  left : 400px;
+}
+
+#anim3 {
+  top:200px;
+  left : 800px;
+}
+
+.imagesAnimation:hover {
+  -webkit-transform : scale(1.1);
+}
+
+#texteExplication{
+  position: absolute;
+  top : 380px;
+  text-align: center;
+}
+
+ul {
+  width:300px;
+  margin:0 auto;
+}

@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica;
+  font-family: MisterKInformalPro-regular;
   text-align: center;
   background-color: #B2BDBC;
   position: relative;
@@ -23,7 +23,9 @@ h1 {
 }
 
 h2 {
-  opacity:0.8;
+  opacity:0.6;
+  margin-top: 50px;
+  text-decoration: underline;
 }
 
 
@@ -33,7 +35,6 @@ h2 {
   height:100%;
   width : 700px;;
   margin: auto;
-
 }
 
 img {
@@ -43,6 +44,7 @@ img {
   -webkit-filter : blur(5px);
   -webkit-transform : scale(0.5);
   vertical-align: bottom;
+
 }
 
 img:hover {
@@ -52,7 +54,23 @@ img:hover {
 }
 
 .texte {
-    position: absolute;;
+    position: absolute;
     top:45%;
-    left:5%;
+    left:4%;
+}
+
+.captures {
+  position: absolute;
+  top:45%;
+  left:78%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+
+}
+a:hover {
+    font-style: italic;
 }
