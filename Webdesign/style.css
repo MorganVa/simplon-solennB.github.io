@@ -1,0 +1,58 @@
+body {
+  font-family: Helvetica;
+  text-align: center;
+  background-color: #B2BDBC;
+  position: relative;
+}
+
+h1 {
+  font-size : 3em;
+   animation: roll 4s ;
+   -webkit-transform: scale(1.2);
+   color : #009999;
+   text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+}
+
+@keyframes roll {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+h2 {
+  opacity:0.8;
+}
+
+
+.image {
+  position : relative;
+  border : 1px dashed #009999;
+  height:100%;
+  width : 700px;;
+  margin: auto;
+
+}
+
+img {
+ height:100%;
+  width : 50%;
+  margin: auto;
+  -webkit-filter : blur(5px);
+  -webkit-transform : scale(0.5);
+  vertical-align: bottom;
+}
+
+img:hover {
+  -webkit-filter : none;
+  -webkit-transform : none;
+  transition: all .6s ease-in;
+}
+
+.texte {
+    position: absolute;;
+    top:45%;
+    left:5%;
+}
