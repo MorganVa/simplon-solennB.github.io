@@ -89,10 +89,9 @@ button {
   padding: 10px;
   font-size : 0.9em;
   background-color: #DDF1FB
-
 }
 
 a {
   text-decoration: none;
-  color : #DDF1FB;
+  color : black;
 }
