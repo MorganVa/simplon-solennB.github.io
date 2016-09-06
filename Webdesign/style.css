@@ -1,15 +1,14 @@
 body {
-  font-family: MisterKInformalPro-regular;
+  font-family: Helvetica;
   text-align: center;
-  background-color: #B2BDBC;
   position: relative;
 }
 
 h1 {
-  font-size : 3em;
+    font-size : 3em;
    animation: roll 4s ;
    -webkit-transform: scale(1.2);
-   color : #009999;
+   color : #9ED0C9;
    text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
 }
 
@@ -31,10 +30,11 @@ h2 {
 
 .image {
   position : relative;
-  border : 1px dashed #009999;
+  border : 1.5px dashed #009999;
   height:100%;
   width : 700px;;
   margin: auto;
+  background-color: #EDEFEF;
 }
 
 img {

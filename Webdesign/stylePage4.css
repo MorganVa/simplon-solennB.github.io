@@ -1,0 +1,79 @@
+body {
+  font-family: Helvetica;
+  font-size : 0.9em;
+  }
+
+  button {
+  position: absolute;
+  top:600px;
+  left : 45%;
+  border-radius: 30px;
+  padding: 10px;
+  font-size : 0.9em;
+  background-color: #DDF1FB
+}
+
+a {
+  text-decoration: none;
+  color : black;
+}
+
+#captureEcran {
+  margin-left:5px;
+}
+
+.imagesAnimation {
+  position: absolute;
+  display: inline-block;
+  height: 250px;
+  width:395px;
+}
+
+.imagesAnimation:hover {
+  -webkit-transform : scale(1.1);
+}
+
+#anim2 {
+  top:100px;
+  left : 400px;
+}
+
+
+#anim3 {
+  top:200px;
+  left : 800px;
+}
+
+div {
+  display: inline;
+  position: relative;
+}
+
+#texteExplication1, #texteExplication2, #texteExplication3 {
+  position: absolute;
+  text-align: center;
+  height: auto;
+  width:360px;
+  padding:3px;
+}
+
+#texteExplication1{
+  top : 260px;
+  left:10px;
+}
+
+#texteExplication2  {
+  top : 350px;
+  left:410px;
+  -webkit-filter : brightness(0);
+  opacity:0.5;
+}
+
+.apparaitBloc:hover #texteExplication2{
+  opacity:1;
+}
+
+#texteExplication3{
+  top : 450px;
+  left:830px;
+}

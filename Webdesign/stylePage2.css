@@ -2,23 +2,21 @@ body {
   font-family: Helvetica;
   }
 
-  #captureEcran {
+#captureEcran {
   margin-left:5px;
 }
 
 .imagesAnimation {
   position: absolute;
   display: inline-block;
-  height: 100%;
-  width:33%;
   height: 250px;
   width:395px;
 }
 
-div {
-  display: inline;
-  position: relative;
+.imagesAnimation:hover {
+  -webkit-transform : scale(1.1);
 }
+
 #anim2 {
   top:100px;
   left : 400px;
@@ -29,17 +27,72 @@ div {
   left : 800px;
 }
 
-.imagesAnimation:hover {
-  -webkit-transform : scale(1.1);
+div {
+  display: inline;
+  position: relative;
 }
 
-#texteExplication{
+.apparaitBloc:hover #texteExplication1, .apparaitBloc:hover #texteExplication2, .apparaitBloc:hover #texteExplication3 {
+  -webkit-filter: none;
+}
+
+#texteExplication2 ul {
+  transform:translate(20px, 20px);;
+  opacity : 0;
+}
+
+.apparaitBloc:hover #texteExplication2 ul{
+  transform: none;
+  opacity:1;
+  transition: all .7s ease-in;
+}
+
+#texteExplication1, #texteExplication2, #texteExplication3 {
   position: absolute;
-  top : 380px;
   text-align: center;
+  height: auto;
+  width:355px;
+  -webkit-filter: blur(20px);
+  border:3px solid #DDF1FB;
+  padding:3px;
+}
+
+#texteExplication1{
+  top : 280px;
+  left:10px;
 }
 
 ul {
   width:300px;
   margin:0 auto;
+}
+
+#texteExplication2 {
+  top : 380px;
+  left:420px;
+}
+
+
+
+#texteExplication3{
+  top : 480px;
+  left:830px;
+  color : #EBABAA;
+  font-family: Baskerville, Regular;
+}
+
+button {
+  position: absolute;
+  top:600px;
+  left : 45%;
+  border-radius: 30px;
+  padding: 10px;
+  font-size : 0.9em;
+  background-color: #DDF1FB
+
+}
+
+a {
+  text-decoration: none;
+  color : #DDF1FB;
 }
