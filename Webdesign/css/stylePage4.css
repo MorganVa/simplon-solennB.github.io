@@ -65,12 +65,12 @@ div {
 #texteExplication2  {
   top : 350px;
   left:410px;
-  -webkit-filter : brightness(0);
-  opacity:0.5;
+  opacity:0.4;
 }
 
 .apparaitBloc:hover #texteExplication2{
   opacity:1;
+  transition: all .6s ease-in;
 }
 
 #texteExplication3{
