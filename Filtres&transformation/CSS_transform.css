@@ -83,19 +83,9 @@ p, li, ul, h1 {
 span {
   font-weight: bold; }
 
-.demo {
-  flex-direction: column; }
-
 #demonstration_origin {
   display: flex;
-  justify-content: space-around; }
-
-#texte1 {
-  margin-left: 20px; }
-
-#texte2 {
-  margin: 20px 0;
-  display: block; }
+  width: 100vw; }
 
 .box {
   background: lightblue;
@@ -183,6 +173,10 @@ footer {
   margin-top: 60px; }
 
 #mark {
-  height: 1120%; }
+  height: 1140%; }
+
+  #attention::before{
+    content:url(http://www.rxlabz.com/simplon/files/icons/dialog-warning.png);
+  }
 
 /*# sourceMappingURL=CSS_transform.css.map */

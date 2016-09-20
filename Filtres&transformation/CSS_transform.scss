@@ -9,6 +9,10 @@
     margin: auto;
 }
 
+#attention::before{
+  content:url(http://www.rxlabz.com/simplon/files/icons/dialog-warning.png);
+}
+
 #demo_scale:hover {
     transform:scale(1.5);
     transition: all .6s ease-in;
@@ -43,22 +47,18 @@ span {
     font-weight: bold;
 }
 
-.demo {
-  flex-direction: column;
-}
 
 #demonstration_origin {
   display: flex;
-  justify-content: space-around;
+  width: 100vw ;
 }
 
 #texte1 {
-    margin-left: 20px;
+
 }
 
 #texte2 {
-    margin: 20px 0 ;
-    display: block;
+
 }
 
 .box {
@@ -158,5 +158,5 @@ footer {
 }
 
 #mark {
-  height: 1120%;
+  height: 1140%;
 }

@@ -48,9 +48,12 @@ code {
 }
 
 #grayscale #filtre_grayscale:hover {
-    filter: grayscale(0.7);
-    transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  filter: grayscale(.7);
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: grayscale(.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: grayscale(.7);
+  -moz-transition: all 0.3s ease-in-out;
 }
 
 #blur #filtre_blur:hover {
@@ -157,10 +160,10 @@ transition: all 0.3s ease-in-out;
 
 @keyframes slideranim {
   0%{}
-  20%{filter:grayscale(1);}
-  40%{filter:brightness(1.5)}
-  60%{filter:sepia(1)}
-  80%{filter:invert(1)}
+  20%{-webkit-filter:grayscale(1);}
+  40%{-webkit-filter:brightness(1.5)}
+  60%{-webkit-filter:sepia(1)}
+  80%{-webkit-filter:invert(1)}
   100%{}
 }
 

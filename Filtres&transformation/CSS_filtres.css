@@ -88,7 +88,10 @@ code {
 #grayscale #filtre_grayscale:hover {
   filter: grayscale(0.7);
   transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  -webkit-filter: grayscale(0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-filter: grayscale(0.7);
+  -moz-transition: all 0.3s ease-in-out; }
 
 #blur #filtre_blur:hover {
   filter: blur(5px);
@@ -182,13 +185,13 @@ code {
 
 @keyframes slideranim {
   20% {
-    filter: grayscale(1); }
+    -webkit-filter: grayscale(1); }
   40% {
-    filter: brightness(1.5); }
+    -webkit-filter: brightness(1.5); }
   60% {
-    filter: sepia(1); }
+    -webkit-filter: sepia(1); }
   80% {
-    filter: invert(1); } }
+    -webkit-filter: invert(1); } }
 p, h1, li, ul {
   font-family: Francois One, sans-serif; }
 
