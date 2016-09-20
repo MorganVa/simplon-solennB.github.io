@@ -48,9 +48,19 @@ span {
 }
 
 
+#attention::before{
+   content:url("http://www.rxlabz.com/simplon/files/icons/dialog-warning.png");
+   padding-right: 20px;
+ }
+
 #demonstration_origin {
   display: flex;
-  width: 100vw ;
+  width: 60vw ;
+  margin-left: 30vw;
+}
+.demo-origin {
+  width : 30vw;
+  padding : 0 10vw;
 }
 
 #texte1 {
@@ -59,6 +69,13 @@ span {
 
 #texte2 {
 
+}
+
+#democode {
+  text-align: center;
+  display: block;
+  width: 30vw;
+  margin: 20px 35vw ;
 }
 
 .box {

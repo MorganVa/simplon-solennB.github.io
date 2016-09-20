@@ -87,7 +87,7 @@
                     </ul>
                 </ul>
 
-                <p>ATTENTION : Tous les éléments peuvent s'aggrandir / se réduire mais attention aux images qui peuvent devenir flous / illisibles !!! Ne pas en abuser !</p>
+                <p id="attention"> ATTENTION : Tous les éléments peuvent s'aggrandir / se réduire mais attention aux images qui peuvent devenir flous / illisibles !!! Ne pas en abuser !</p>
 
                 <!-- transform origin avec scale : top / bottom / center etc ... permet le non dépassement de la fenêtre -->
             </div>
@@ -136,7 +136,7 @@
                     </ul>
                 </ul>
 
-                <p>ATTENTION : Skew() est en voie de disparition. Seuls skewX() et skewY() seront utilisables.</p>
+                <p id="attention"> ATTENTION : Skew() est en voie de disparition. Seuls skewX() et skewY() seront utilisables.</p>
             </div>
 
             <div>
@@ -147,7 +147,7 @@
 
 
             <div class="demonstration">
-                <code>transform: skew(15deg, 15deg);</code>
+                <code id="democode">transform: skew(15deg, 15deg);</code>
                 <div class="demo" id="demo_skew"></div>
             </div>
         </section>
@@ -179,7 +179,7 @@
 
 
             <div class="demonstration">
-                <code>transform:rotate(180deg);</code>
+                <code id="democode">transform:rotate(180deg);</code>
                 <div class="demo" id="demo_rotate"></div>
             </div>
         </section>
@@ -221,7 +221,7 @@
 
 
             <div class="demonstration">
-                <code>transform: translate(20px, 20px);</code>
+                <code id="democode">transform: translate(20px, 20px);</code>
                 <div class="demo" id="demo_translate"></div>
             </div>
         </section>
@@ -236,7 +236,7 @@
                 <p>La fonction CSS3 matrix permet d'incliner, de changer l'échelle, de faire une rotation, de décaler un élément HTML en regroupant les élements scale(), skew(), rotate() et translate().</p>
                 <p>La fonction matrix() se présente de cette manière :<code>transform : matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) </code></p>
                 <p>rotate() n'est pas présente dans les paramètres de matrix() mais vous pouvez quand même la rajouter aux autres transformations (cf. ci dessous). <br />
-                ATTENTION ! On ne précise pas d'unité pour les valeurs !</p>
+                <p id="attention"> ATTENTION ! On ne précise pas d'unité pour les valeurs !</p>
                   <br>
                 <ol>
                     <li>Si vous voulez appliquer une/des transformations SANS utiliser rotate()</li>
@@ -277,7 +277,7 @@
 
 
             <div class="demonstration" >
-                <code>transform: matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);</code>
+                <code id="democode">transform: matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);</code>
                 <div class="demo" id="demo_matrix"></div>
             </div>
         </section>
