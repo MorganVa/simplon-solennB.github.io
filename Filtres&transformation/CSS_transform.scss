@@ -94,16 +94,16 @@ button {
 #header {
   width: 100vw;
   margin-bottom: 60px;
+  img {
+    width: 100vw;
+    height: 272px;
+  }
+}
 
-}
-#header + img {
-  width: 100vw;
-  height: 327px;
-  position: absolute;
-}
 #animtitle {
   position: absolute;
-  top: 5vh;
+  top: 0;
+  pointer-events: none;
   left: 0;
   width: 100vw;
   animation-name: titleanim ;
@@ -155,4 +155,8 @@ p , h1, li , ul {
 footer {
   position: static;
   margin-top: 60px;
+}
+
+#mark {
+  height: 1120%;
 }

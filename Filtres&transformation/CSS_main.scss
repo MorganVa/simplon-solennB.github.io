@@ -59,5 +59,16 @@ body{
 
 
 p , li , ul , h1 {
-  margin-left: 30px;
+  margin-left: 90px;
+}
+
+#mark {
+  background-color: red;
+  opacity: .5;
+  height: 220%;
+  width: 3px;
+  left: 3vw;
+  top: 0;
+  z-index: -2;
+  position: absolute;
 }

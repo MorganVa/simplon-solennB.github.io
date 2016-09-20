@@ -36,9 +36,21 @@ body {
   background-image: url("images/bg.png"); }
 
 p, li, ul, h1 {
-  margin-left: 30px; }
+  margin-left: 90px; }
+
+#mark {
+  background-color: red;
+  opacity: .5;
+  height: 220%;
+  width: 3px;
+  left: 3vw;
+  top: 0;
+  z-index: -2;
+  position: absolute; }
 
 article {
+  width: 50vw;
+  margin-left: 25vw;
   display: flex; }
 
 .code {
@@ -183,5 +195,8 @@ p, h1, li, ul {
 footer {
   position: static;
   margin-top: 60px; }
+
+#mark {
+  height: 720%; }
 
 /*# sourceMappingURL=CSS_filtres.css.map */

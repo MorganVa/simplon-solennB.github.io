@@ -2,6 +2,8 @@
 @import "CSS_main" ;
 
 article {
+    width : 50vw;
+    margin-left: 25vw;
     display: flex;
 }
 
@@ -169,4 +171,8 @@ p , h1, li , ul {
 footer {
   position: static;
   margin-top: 60px;
+}
+
+#mark {
+  height: 720% ;
 }

@@ -36,7 +36,17 @@ body {
   background-image: url("images/bg.png"); }
 
 p, li, ul, h1 {
-  margin-left: 30px; }
+  margin-left: 90px; }
+
+#mark {
+  background-color: red;
+  opacity: .5;
+  height: 220%;
+  width: 3px;
+  left: 3vw;
+  top: 0;
+  z-index: -2;
+  position: absolute; }
 
 * {
   font-family: Just Another Hand, sans-serif;
@@ -144,16 +154,6 @@ article {
 
 #crayon:hover {
   transform: rotate(7deg); }
-
-#mark {
-  background-color: red;
-  opacity: .5;
-  height: 220%;
-  width: 3px;
-  left: 3vw;
-  top: 0;
-  z-index: -2;
-  position: absolute; }
 
 #ink1 {
   width: 128px;

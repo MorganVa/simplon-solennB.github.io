@@ -36,7 +36,17 @@ body {
   background-image: url("images/bg.png"); }
 
 p, li, ul, h1 {
-  margin-left: 30px; }
+  margin-left: 90px; }
+
+#mark {
+  background-color: red;
+  opacity: .5;
+  height: 220%;
+  width: 3px;
+  left: 3vw;
+  top: 0;
+  z-index: -2;
+  position: absolute; }
 
 .demo {
   width: 300px;
@@ -73,10 +83,8 @@ p, li, ul, h1 {
 span {
   font-weight: bold; }
 
-.demonstration {
-  text-align: center;
-  flex-direction: column;
-}
+.demo {
+  flex-direction: column; }
 
 #demonstration_origin {
   display: flex;
@@ -117,15 +125,14 @@ button {
 #header {
   width: 100vw;
   margin-bottom: 60px; }
-
-#header + img {
-  width: 100vw;
-  height: 327px;
-  position: absolute; }
+  #header img {
+    width: 100vw;
+    height: 272px; }
 
 #animtitle {
   position: absolute;
-  top: 5vh;
+  top: 0;
+  pointer-events: none;
   left: 0;
   width: 100vw;
   animation-name: titleanim;
@@ -174,5 +181,8 @@ p, h1, li, ul {
 footer {
   position: static;
   margin-top: 60px; }
+
+#mark {
+  height: 1120%; }
 
 /*# sourceMappingURL=CSS_transform.css.map */

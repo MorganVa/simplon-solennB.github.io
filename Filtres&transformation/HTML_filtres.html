@@ -9,6 +9,7 @@
     </head>
 
     <body>
+      <div id="mark"></div>
 
       <div id="filterslider">
         <img src="images/filterhead_1.png">
@@ -22,7 +23,7 @@
 
         <section id="introduction_filtres">
             <header>
-                <h1>Les filtres (+)</h1>
+                <h1>Les filtres</h1>
             </header>
 
             <div>
@@ -67,8 +68,8 @@
                 <div class="code">
                     <h1>Code appliqu&eacute; :</h1>
                     <code>
-                        <span class="texte_vert">#grayscale #filtre_greyscale:hover </span> {<br />
-                        filter: greyscale(<span class="texte_violet">0.7</span>);<br />
+                        <span class="texte_vert">#grayscale #filtre_grayscale:hover </span> {<br />
+                        filter: grayscale(<span class="texte_violet">0.7</span>);<br />
                         transition: <span class="texte_bleu">all</span> <span class="texte_violet">0.3</span><span class="texte_rouge">s</span> ease-in-out;<br />
                         -webkit-filter: grayscale(<span class="texte_violet">0.7</span>);<br />
                         -webkit-transition: <span class="texte_bleu">all</span> <span class="texte_violet">0.3</span><span class="texte_rouge">s</span> ease-in-out;<br />
@@ -254,7 +255,7 @@
 
             <div>
                 <p>Cet effet permet de modifier la luminosité de l'image.</p>
-                <p>La valeur du filtre peut-être soit un pourcentage, soit un nombr /e décimal.</p>
+                <p>La valeur du filtre peut-être soit un pourcentage, soit un nombre décimal.</p>
                 <p>La valeur 0 ou 0% n'aura aucun effet, il s'agit de la valeur par défaut (none) et 1 ou 100% transformera totalement l'image.</p>
             </div>
 
@@ -266,12 +267,12 @@
                 <div class="code">
                     <h1>Code appliqu&eacute; :</h1>
                     <code>
-                        <span class="texte_vert">#br /ightness #filtre_br /ightness:hover </span> {<br />
-                        filter: br /ightness(<span class="texte_violet">1.5</span>);<br />
+                        <span class="texte_vert">#brightness #filtre_brightness:hover </span> {<br />
+                        filter: brightness(<span class="texte_violet">1.5</span>);<br />
                         transition: <span class="texte_bleu">all</span> <span class="texte_violet">0.3</span><span class="texte_rouge">s</span> ease-in-out;<br />
-                        -webkit-filter: br /ightness(<span class="texte_violet">1.5</span>);<br />
+                        -webkit-filter: brightness(<span class="texte_violet">1.5</span>);<br />
                         -webkit-transition: <span class="texte_bleu">all</span> <span class="texte_violet">0.3</span><span class="texte_rouge">s</span> ease-in-out;<br />
-                        -moz-filter: br /ightness(<span class="texte_violet">1.5</span>);<br />
+                        -moz-filter: brightness(<span class="texte_violet">1.5</span>);<br />
                         -moz-transition: <span class="texte_bleu">all</span> <span class="texte_violet">0.3</span><span class="texte_rouge">s</span> ease-in-out;<br />
                         }
                     </code>
@@ -390,7 +391,7 @@
 
             <header>
                 <h1>Est-il possible de combiner des filtres (+) ?</h1>
-                <h2>Oui, voici un exemple pratique.</h2>
+                <p>Oui, voici un exemple pratique.</p>
             </header>
 
             <article>
@@ -415,7 +416,7 @@
         </section>
 
         <aside id="bonus">
-            <h2>Conclusion</h2>
+            <h1>Conclusion</h1>
 
             <p>Nous avons vu dans ce tutoriel les différents effets applicables aux images  grâce à la propriété filter de CSS3.</p>
             <p>Vous pouvez vous amuser en appliquant ces filtres sur d'autres éléments par exemple !</p>
