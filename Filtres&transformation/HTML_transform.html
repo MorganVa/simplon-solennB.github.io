@@ -201,7 +201,7 @@
                     </ul>
                     <br><li>Si <code>transform : translateX(x)</code> :</li>
                     <ul>
-                        <li>y représente le déplacement vertical. L'élément fera UNIQUEMENT une translation verticale.</li>
+                        <li>x représente le déplacement vertical. L'élément fera UNIQUEMENT une translation verticale.</li>
                     </ul>
                     <br><li>Si <code>transform : translateY(y)</code> :</li>
                     <ul>
@@ -243,25 +243,25 @@
                     <ul>
                         <br><li>Les valeurs de scaleX() et scaleY() resteront intactes</code> :</li>
                         <ul>
-                            <li>Ex :<code>transform: scale(2)</code> est égal à <code>transform: matrix(2, 0, 0, 2, 0, 0)</code></li>
+                            <li>Ex :<code>transform: scale(<span class="texte_bleu">2</span>)</code> est égal à <code>transform: matrix(<span class="texte_bleu">2</span>, 0, 0, <span class="texte_bleu">2</span>, 0, 0)</code></li>
                         </ul>
                         <br><li>les valeurs de translateX() et translateY() resteront intactes</li>
                         <ul>
-                            <li>Ex :<code>transform: translate(20px, 20px)</code> est égal à <code>transform: matrix(1, 0, 0, 1, 20, 20)</code></li>
+                            <li>Ex :<code>transform: translate(<span class="texte_bleu">20px, 20px</span>)</code> est égal à <code>transform: matrix(1, 0, 0, 1, <span class="texte_bleu">20, 20</span>)</code></li>
                         </ul>
                         <br><li>Les valeurs de skewX() et skewY() seront modifiées</li>
                         <ul>
-                            <li>Ex :<code>transform: skew(20deg, 20deg)</code> est égal à <code>transform: matrix(1, 0.36397, 0.36397, 1, 0, 0)</code></li>
+                            <li>Ex :<code>transform: skew(<span class="texte_bleu">20deg, 20deg</span>)</code> est égal à <code>transform: matrix(1, <span class="texte_bleu">0.36397, 0.36397</span>, 1, 0, 0)</code></li>
                         </ul>
                     </ul>
                     <br>
                     <li>Si vous voulez appliquer une / des transformations EN UTILISANT rotate()</li>
                     <br><ul>
                         <li>Toutes les valeurs seront modifiées, quel que soit la / les fonction(s) utilisé(es).</li>
-                        <br><li>les valeurs de translateX() et translateY() resteront intactes</li>
+                        <br><li>les valeurs de translateX() et translateY() resteront intactes (lorsue d'autres transforms sont appliquées)</li>
                         <ul>
-                            <li>Ex :<code> transform: scale(2)</code> est égal à<code> transform: matrix(2, 0, 0, 2, 0, 0)</code><br />
-                            Par contre <code>transform: scale(2) rotate(45deg)</code> donnera :<code> transform: matrix(1.41421, 1.41421, -1.41421, 1.41421, 0, 0)</code><br />
+                            <li>Ex :<code> transform: scale(<span class="texte_bleu">2</span>)</code> est égal à<code> transform: matrix(<span class="texte_bleu">2</span>, 0, 0, <span class="texte_bleu">2</span>, 0, 0)</code><br />
+                            Par contre <code>transform: scale(<span class="texte_bleu">2</span>) rotate(<span class="texte_bleu">45deg</span>)</code> donnera :<code> transform: matrix(<span class="texte_bleu">1.41421, 1.41421, -1.41421, 1.41421,</span> 0, 0)</code><br />
                             (cf explications des matrices pour plus de renseignements)</li>
                         </ul>
                     </ul>
@@ -291,10 +291,10 @@
             <div>
                 <p>La fonction CSS transform-origin permet de modifier l'origine du repère.</p>
                 <p>Elle est associée à une transformation (transform).</p>
-                <p>La fonction transform-orogin se présente de cette manière :<code> transform-origin: x y;</code></p>
+                <p>La fonction transform-origin se présente de cette manière :<code> transform-origin: x y;</code></p>
 
                 <ul>
-                    <li> x représente le déplacement horizontal du point d'origine.</li>
+                    <li>x représente le déplacement horizontal du point d'origine.</li>
                     <li>y représente le déplacement vertical du point d'origine.</li>
                     <li>x et y sont exprimés en %, en unité de longueur(cm, px, ...) ou en mot clé (left, right, top, bottom ou center).</li>
                     <li>La valeur de y peut être omise. Dans ce cas c'est la valeur par défaut qui est utilisée (center).</li>
