@@ -10,11 +10,10 @@ footer {
     font-family: Just Another Hand, sans-serif; }
 
 nav {
-  width: 100%;
-  padding-bottom: 120px; }
+  width: 100%; }
   nav div {
     font-family: Just Another Hand, sans-serif;
-    font-size: 45px;
+    font-size: 3vw;
     color: #252525;
     background-color: skyblue;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
@@ -48,6 +47,16 @@ p, li, ul, h1 {
   top: 0;
   z-index: -2;
   position: absolute; }
+
+.hiddencontent {
+  overflow: hidden;
+  height: 0; }
+
+#chapterheader:hover {
+  cursor: pointer; }
+
+nav {
+  padding-bottom: 120px; }
 
 .demo {
   width: 300px;
@@ -132,18 +141,17 @@ button {
   width: 100vw;
   margin-bottom: 60px; }
   #header img {
-    width: 100vw;
-    height: 272px; }
+    width: 100vw; }
 
 .texte_bleu {
   color: #3FBFBF; }
 
 #animtitle {
   position: absolute;
-  top: 0;
+  top: -3vw;
   pointer-events: none;
   left: 0;
-  width: 100vw;
+  width: 70vw;
   animation-name: titleanim;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;

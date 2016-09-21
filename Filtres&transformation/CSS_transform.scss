@@ -1,5 +1,9 @@
 
 @import "CSS_main" ;
+nav {
+  padding-bottom: 120px;
+}
+
 
 .demo {
     width: 300px;
@@ -68,7 +72,6 @@ span {
 }
 
 #texte2 {
-
 }
 
 #democode {
@@ -113,7 +116,6 @@ button {
   margin-bottom: 60px;
   img {
     width: 100vw;
-    height: 272px;
   }
 }
 
@@ -123,10 +125,10 @@ button {
 
 #animtitle {
   position: absolute;
-  top: 0;
+  top: -3vw;
   pointer-events: none;
   left: 0;
-  width: 100vw;
+  width: 70vw;
   animation-name: titleanim ;
   animation-duration: 5s ;
   animation-timing-function: ease-in-out;;
