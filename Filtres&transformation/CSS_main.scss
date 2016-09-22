@@ -66,12 +66,13 @@ p , li , ul , h1 {
 #mark {
   background-color: red;
   opacity: .5;
-  height: 220%;
+  height: 100%;
   width: 3px;
+  bottom: 0;
   left: 3vw;
   top: 0;
   z-index: -2;
-  position: absolute;
+  position: fixed;
 }
 
 .hiddencontent {

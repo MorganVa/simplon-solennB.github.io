@@ -216,9 +216,6 @@ footer {
   margin-top: 60px;
 }
 
-#mark {
-  height: 1170%;
-}
 
 .demo_images , .demo_images2 , .demo_images1 {
   width: 75vw;
@@ -229,11 +226,15 @@ footer {
   }
 }
 
-.demo_images2 {
-  margin-left: 20vw;
-  width: 60vw;
+#imagescalefactor {
+  height: 60px;
+  width: 60px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
 }
-.demo_images1 {
-  width: 50vw;
-  margin-left: 27.5vw;
+
+#imagescalefactor:hover {
+  height: 55%;
+  width: 55%;
 }
