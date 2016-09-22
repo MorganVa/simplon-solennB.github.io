@@ -18,33 +18,53 @@ nav {
 }
 
 #demo_scale:hover {
-    transform:scale(1.5);
-    transition: all .6s ease-in;
+  -webkit-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -ms-transition: all .6s ease-in;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
 }
 
 #demo_skew:hover {
-    transform:skew(15deg, 15deg);
+  -webkit-transform:skew(15deg, 15deg);
+  -moz-transform:skew(15deg, 15deg);
+    -ms-transform:skew(15deg, 15deg);
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-    transition: all .6s ease-in;
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -ms-transition: all .6s ease-in;
 }
 
 #demo_rotate:hover {
-    transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-    transition: all .6s ease-in;
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -ms-transition: all .6s ease-in;
 }
 
 #demo_translate:hover {
-    transform:translate(20px, 20px);
+  -webkit-transform:translate(20px, 20px);
+  -moz-transform:translate(20px, 20px);
+    -ms-transform:translate(20px, 20px);
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-    transition: all .6s ease-in;
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -ms-transition: all .6s ease-in;
 }
 
 #demo_matrix:hover {
-    transform:matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);
+  -webkit-transform:matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);
+  -moz-transform:matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);
+    -ms-transform:matrix(1.39162, 0.562252, 0.300767, 1.70574, 40, 0);
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-    transition: all .6s ease-in;
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -ms-transition: all .6s ease-in;
 }
 
 span {
@@ -85,7 +105,9 @@ span {
   background: lightblue;
   width: 200px;
   height: 200px;
-  transition: transform 1s linear;
+  -webkit-transition: transform 1s linear;
+  -moz-transition: transform 1s linear;
+  -ms-transition: transform 1s linear;
   margin: auto;
 }
 
@@ -93,13 +115,19 @@ span {
   background: lightblue;
   width: 200px;
   height: 200px;
-  transition: transform 1s linear;
-  transform-origin: top left;
+  -webkit-transition: transform 1s linear;
+  -moz-transition: transform 1s linear;
+  -ms-transition: transform 1s linear;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
   margin: auto;
 }
 
 .box-rotate {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
 }
 
 #texte {
@@ -136,9 +164,15 @@ button {
 }
 
 @keyframes titleanim {
-  0%{transform: rotate(0)}
-  50%{transform: rotate(12deg)}
-  100%{transform: rotate(0)}
+  0%{-webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+  -ms-transform: rotate(0);}
+  50%{-webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+-ms-transform: rotate(12deg);}
+  100%{-webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+-ms-transform: rotate(0)}
 }
 
 header {
@@ -159,7 +193,9 @@ text-align: center;
 line-height: 80px;
 display: inline-block;
 letter-spacing: 4px;
-transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
 text-decoration: none;}
 
 code {

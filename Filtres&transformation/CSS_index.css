@@ -24,7 +24,9 @@ nav {
     line-height: 80px;
     display: inline-block;
     letter-spacing: 4px;
-    transition: all 0.3s ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; }
   nav div:hover {
     width: 20vw;
     margin: 0 14vw; }
@@ -78,8 +80,12 @@ article {
   .compabilite img {
     width: 100px;
     height: 100px;
-    transform: scale(0.8);
-    transition: all .2s ease-in-out; }
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out; }
   .compabilite p {
     font-size: 35px;
     padding-left: 60px;
@@ -87,13 +93,17 @@ article {
     .compabilite p span {
       overflow: hidden;
       opacity: 0;
-      transition: opacity 0.3s; }
+      -webkit-transition: opacity 0.3s;
+      -moz-transition: opacity 0.3s;
+      -ms-transition: opacity 0.3s; }
 
 .compabilite:hover span {
   opacity: 1; }
 
 .compabilite:hover img {
-  transform: scale(1); }
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1); }
 
 #postit, #postit2 {
   background-color: #F0E886;
@@ -102,24 +112,34 @@ article {
   color: #252525;
   height: 250px;
   width: 250px;
-  transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 5vw;
   top: 90vh;
   line-height: 50px;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; }
 
 #postit2 {
   top: 120vh;
   left: 7vw;
-  transform: rotate(-5deg); }
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg); }
 
 #postit:hover {
-  transform: rotate(5deg); }
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg); }
 
 #postit2:hover {
-  transform: rotate(-2deg); }
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg); }
 
 #listcontainer {
   width: 100vw;
@@ -131,7 +151,9 @@ article {
     margin: 0 16.5vw;
     display: inline-block;
     background-color: transparent;
-    transition: all .5s ease-in-out; }
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out; }
     #listcontainer .listcontent a {
       text-decoration: none;
       font-size: 25px;
@@ -139,7 +161,9 @@ article {
       text-align: center;
       display: list-item;
       list-style: none;
-      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
       line-height: 40px; }
     #listcontainer .listcontent a:hover {
       text-decoration: underline; }
@@ -157,10 +181,14 @@ article {
   z-index: 5;
   position: absolute;
   overflow: hidden;
-  transition: all .3s ease-in-out; }
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out; }
 
 #crayon:hover {
-  transform: rotate(7deg); }
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg); }
 
 #ink1 {
   width: 128px;
@@ -177,7 +205,9 @@ article {
   position: absolute;
   right: 10vw;
   top: 180vh;
-  transform: scale(0.6); }
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6); }
 
 #ink3 {
   width: 115px;
@@ -186,7 +216,9 @@ article {
   position: absolute;
   left: 3vw;
   top: 78vh;
-  transform: rotate(-60deg); }
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg); }
 
 #ink4 {
   width: 90px;
@@ -195,7 +227,9 @@ article {
   position: absolute;
   left: 32vw;
   top: 120vh;
-  transform: rotate(-60deg); }
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg); }
 
 #rap {
   width: 510px;
@@ -204,11 +238,17 @@ article {
   position: absolute;
   left: 2vw;
   top: 160vh;
-  transform: rotate(20deg);
-  transition: all .3s ease-in-out; }
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out; }
 
 #rap:hover {
-  transform: rotate(18deg); }
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -ms-transform: rotate(18deg); }
 
 footer {
   bottom: -70vh; }

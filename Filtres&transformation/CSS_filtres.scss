@@ -58,6 +58,8 @@ code {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-filter: grayscale(.7);
   -moz-transition: all 0.3s ease-in-out;
+  -ms-filter: grayscale(.7);
+  -ms-transition: all 0.3s ease-in-out;
 }
 
 #blur #filtre_blur:hover {
@@ -67,6 +69,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: blur(5px);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: blur(5px);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #saturate #filtre_saturate:hover {
@@ -76,6 +80,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: saturate(500%);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: saturate(500%);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #sepia #filtre_sepia:hover {
@@ -85,6 +91,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: sepia(0.7);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: sepia(0.7);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #hue_rotate #filtre_hue_rotate:hover {
@@ -94,6 +102,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: hue-rotate(200deg);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: hue-rotate(200deg);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #invert #filtre_invert:hover {
@@ -103,6 +113,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: invert(0.7);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: invert(0.7);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #brightness #filtre_brightness:hover {
@@ -112,6 +124,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: brightness(1.5);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: brightness(1.5);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #contrast #filtre_contrast:hover {
@@ -121,6 +135,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: contrast(0.7);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: contrast(0.7);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #opacity #filtre_opacity:hover {
@@ -130,6 +146,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: opacity(0.7);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: opacity(0.7);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #drop_shadow #filtre_drop_shadow:hover {
@@ -139,6 +157,8 @@ code {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-filter: drop-shadow(16px 16px 20px blue);
     -moz-transition: all 0.3s ease-in-out;
+    -ms-filter: drop-shadow(16px 16px 20px blue);
+    -ms-transition: all 0.3s ease-in-out;
 }
 
 #combinaison #filtre_combinaison:hover {
@@ -147,7 +167,9 @@ transition: all 0.3s ease-in-out;
 -webkit-filter: brightness(0.5) opacity(0.9) saturate(500%);
 -webkit-transition: all 0.3s ease-in-out;
 -moz-filter: brightness(0.5) opacity(0.9) saturate(500%);
--moz-transition: all 0.3s ease-in-out;}
+-moz-transition: all 0.3s ease-in-out;
+-ms-filter: brightness(0.5) opacity(0.9) saturate(500%);
+-ms-transition: all 0.3s ease-in-out;}
 
 #filterslider {
   overflow-x: hidden;
@@ -164,10 +186,18 @@ transition: all 0.3s ease-in-out;
 
 @keyframes slideranim {
   0%{}
-  20%{-webkit-filter:grayscale(1);}
-  40%{-webkit-filter:brightness(1.5)}
-  60%{-webkit-filter:sepia(1)}
-  80%{-webkit-filter:invert(1)}
+  20%{-webkit-filter:grayscale(1);
+    -moz-filter:grayscale(1);
+    -ms-filter:grayscale(1);}
+  40%{-webkit-filter:brightness(1.5);
+    -moz-filter:brightness(1.5);
+    -ms-filter:brightness(1.5);}
+  60%{-webkit-filter:sepia(1);
+    -moz-filter:sepia(1);
+    -ms-filter:sepia(1);}
+  80%{-webkit-filter:invert(1);
+    -moz-filter:invert(1);
+    -ms-filter:invert(1);}
   100%{}
 }
 
