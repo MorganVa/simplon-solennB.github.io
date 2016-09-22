@@ -80,6 +80,15 @@ p , li , ul , h1 {
   height: 0 ;
 }
 
+#chapterheader{
+  -webkit-transition: all .3s ease-in-out ;
+  -moz-transition: all .3s ease-in-out ;
+  -ms-transition: all .3s ease-in-out ;
+  color: brown;
+}
+
 #chapterheader:hover {
   cursor: pointer;
+  color: $pencilcolor;
+  letter-spacing: 10px;
 }

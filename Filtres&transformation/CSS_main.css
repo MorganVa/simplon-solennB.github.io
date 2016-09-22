@@ -55,7 +55,15 @@ p, li, ul, h1 {
   overflow: hidden;
   height: 0; }
 
+#chapterheader {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  color: brown; }
+
 #chapterheader:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  color: #252525;
+  letter-spacing: 10px; }
 
 /*# sourceMappingURL=CSS_main.css.map */

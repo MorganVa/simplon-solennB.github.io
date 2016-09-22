@@ -8,7 +8,7 @@
           <title>Filtres et Transformations</title>
     </head>
 
-    <body>
+    <body onload="onpageopen()">
       <div id="mark"></div>
       <div id="header">
         <img src="images/transformhead.png">
@@ -344,6 +344,32 @@
         $('#button2').click(function () {
             $('.box2').toggleClass('box-rotate');
         });
+        </script>
+
+        <script>
+
+        var pagelocation = window.location.hash ;
+
+        function onpageopen() {
+          if (pagelocation == "#1") {
+            hideshow(0);
+            hideshow(1);
+          }
+          else if (pagelocation == "#2") {
+            hideshow(2);
+            hideshow(3);
+          }
+          else if (pagelocation == "#3") {
+            hideshow(4);
+          }
+          else if (pagelocation == "#4") {
+            hideshow(5);
+          }
+
+          else {
+            console.log("nothing to show");
+          }
+        }
         </script>
         <footer>
             <small>© Copyright 2016, Tous droits r&eacute;serv&eacute;s Solenn, Denis, Mariyam, Anna</small>

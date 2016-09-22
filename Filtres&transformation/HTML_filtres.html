@@ -8,7 +8,7 @@
           <title>Filtres et Transformations</title>
     </head>
 
-    <body>
+    <body onload="onpageopen()">
       <div id="mark"></div>
 
       <div id="filterslider">
@@ -433,6 +433,37 @@
             <p>Nous avons vu dans ce tutoriel les différents effets applicables aux images  grâce à la propriété filter de CSS3.</p>
             <p>Vous pouvez vous amuser en appliquant ces filtres sur d'autres éléments par exemple !</p>
         </aside>
+
+        <script>
+
+        var pagelocation = window.location.hash ;
+
+        function onpageopen() {
+          if (pagelocation == "#1") {
+            hideshow(0);
+            hideshow(1);
+          }
+          else if (pagelocation == "#2") {
+            hideshow(2);
+            hideshow(3);
+            hideshow(4);
+          }
+          else if (pagelocation == "#3") {
+            hideshow(5);
+            hideshow(6);
+            hideshow(7);
+          }
+          else if (pagelocation == "#4") {
+            hideshow(8);
+            hideshow(9);
+            hideshow(10);
+          }
+
+          else {
+            console.log("nothing to show");
+          }
+        }
+        </script>
 
         <footer>
             <small>© Copyright 2016, Tous droits r&eacute;serv&eacute;s Solenn, Denis, Mariyam, Anna</small>
