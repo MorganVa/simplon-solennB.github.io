@@ -1,16 +1,19 @@
 
 @import "CSS_main.scss" ;
 nav {
-  padding-bottom: 1200px;
+  padding-bottom: 120px;
 }
 
 
 .demo {
+    position: relative;;
+    z-index: 1;
     width: 300px;
     height: 150px;
     background-image: url("images/demo_box.png");
     background-size: contain;
     margin: auto;
+
 }
 
 #attention::before{
@@ -87,18 +90,13 @@ span {
   padding : 0 10vw;
 }
 
-#texte1 {
-
-}
-
-#texte2 {
-}
-
 #democode {
   text-align: center;
   display: block;
   width: 30vw;
   margin: 20px 35vw ;
+  position: relative;
+  z-index: 2;
 }
 
 .box {
