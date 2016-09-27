@@ -6,12 +6,25 @@
   filter : $filter;
 }
 
-
-
 $handfont : Just Another Hand , sans-serif;
 $textfont : Francois One , sans-serif ;
 $postitcolor : #F0E886 ;
 $pencilcolor : #252525 ;
+
+#liensUtiles, #backtotop {
+    color : $pencilcolor;
+    text-decoration: none;
+    font-family: $textfont;
+    font-size: 30px;
+    padding-left: 90px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+#liensUtiles:hover, #backtotop:hover {
+  letter-spacing: 10px;
+}
+
 
 footer{
   position: absolute;
@@ -21,6 +34,17 @@ footer{
   text-align: center;
   color: $pencilcolor;
   small{
+    a{
+      text-decoration: none;
+      color: $pencilcolor;
+      -webkit-transition: all .2s ease-in-out ;
+      -moz-transition: all .2s ease-in-out ;
+      -ms-transition: all .2s ease-in-out ;
+    }
+    a:hover{
+      color: #E03333;
+      letter-spacing: 4px;
+    }
     font-size: 40px;
     font-family: $handfont ;
   }

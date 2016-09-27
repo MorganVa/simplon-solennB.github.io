@@ -1,3 +1,16 @@
+#liensUtiles, #backtotop {
+  color: #252525;
+  text-decoration: none;
+  font-family: Francois One, sans-serif;
+  font-size: 30px;
+  padding-left: 90px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out; }
+
+#liensUtiles:hover, #backtotop:hover {
+  letter-spacing: 10px; }
+
 footer {
   position: absolute;
   bottom: 0;
@@ -8,6 +21,15 @@ footer {
   footer small {
     font-size: 40px;
     font-family: Just Another Hand, sans-serif; }
+    footer small a {
+      text-decoration: none;
+      color: #252525;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out; }
+    footer small a:hover {
+      color: #E03333;
+      letter-spacing: 4px; }
 
 nav {
   width: 100%; }
@@ -67,8 +89,7 @@ p, li, ul, h1 {
   letter-spacing: 10px; }
 
 * {
-  font-family: Just Another Hand, sans-serif;
-  font-size: 25px; }
+  font-family: Just Another Hand, sans-serif; }
 
 #header img {
   width: 100vw;
@@ -132,6 +153,16 @@ article {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out; }
+  #postit a, #postit2 a {
+    color: #252525;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    text-decoration: none; }
+  #postit a:hover, #postit2 a:hover {
+    text-decoration: underline; }
+  #postit a:visited, #postit2 a:visited {
+    color: #E03333; }
 
 #postit2 {
   top: 120vh;
@@ -187,7 +218,7 @@ article {
   right: 0vw;
   bottom: -100vh;
   transform: rotate(10deg);
-  z-index: 5;
+  z-index: -5;
   position: absolute;
   overflow: hidden;
   -webkit-transition: all .3s ease-in-out;

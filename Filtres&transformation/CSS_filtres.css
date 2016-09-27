@@ -1,3 +1,16 @@
+#liensUtiles, #backtotop {
+  color: #252525;
+  text-decoration: none;
+  font-family: Francois One, sans-serif;
+  font-size: 30px;
+  padding-left: 90px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out; }
+
+#liensUtiles:hover, #backtotop:hover {
+  letter-spacing: 10px; }
+
 footer {
   position: absolute;
   bottom: 0;
@@ -8,6 +21,15 @@ footer {
   footer small {
     font-size: 40px;
     font-family: Just Another Hand, sans-serif; }
+    footer small a {
+      text-decoration: none;
+      color: #252525;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out; }
+    footer small a:hover {
+      color: #E03333;
+      letter-spacing: 4px; }
 
 nav {
   width: 100%; }

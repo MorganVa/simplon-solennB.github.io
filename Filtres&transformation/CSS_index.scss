@@ -5,7 +5,6 @@
 
 *{
   font-family: $handfont;
-  font-size: 25px;
 }
 
 
@@ -86,6 +85,21 @@ line-height: 50px;
 -webkit-transition: all .3s ease-in-out ;
 -moz-transition: all .3s ease-in-out ;
 -ms-transition: all .3s ease-in-out ;
+
+  a{
+    color: $pencilcolor;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  a:visited{
+    color: #E03333;
+  }
 }
 #postit2 {
   top: 120vh;
@@ -157,7 +171,7 @@ line-height: 50px;
   right: 0vw;
   bottom: -100vh;
   transform: rotate(10deg);
-  z-index: 5;
+  z-index: -5;
   position: absolute;
   overflow: hidden;
   -webkit-transition: all .3s ease-in-out;
