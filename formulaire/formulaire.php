@@ -1,8 +1,43 @@
+
+<?php
+
+$errorMessage = '';
+
+if ((isset($_POST['pseudo']))&&(isset($_POST['mail']))&&(isset($_POST['password']))&&(isset($_POST['confirmPassword']))&&(isset($_POST['understand']))) {
+
+  $pseudo = $_POST['pseudo'];
+  $mdp = $_POST['password'];
+  $mdpCOnfirm = $_POST['confirmPassword'];
+  $email = $_POST['mail'];
+
+
+    if(strlen($mdp)>3 && strlen($mdpCOnfirm)>3 && strlen($email)>3 && strlen($pseudo)>3) {
+
+        if($mdp === $mdpCOnfirm){
+          $user = [
+            "pseudo" => $pseudo,
+            "mail" => $email,
+            "password" => $mdp,
+          ];
+          $loginFailed = false;
+        }else {
+          $loginFailed = true;
+          $errorMessage = '<div class="alert alert-danger">Erreur d\'identification, les MDP ne correspondent pas</div>';
+        }
+    } else {
+      $loginFailed = true;
+      $errorMessage = '<div class="alert alert-danger">Erreur d\'identification, 4 caractères minimum.</div>';
+    }
+}
+// afficher message erreur si rien n'est passé en variable ?
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Formulaire html</title>
+    <title>Formulaire inscription</title>
 
   <!--   <link	href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     BOOTSTRAP & JQuery-->
@@ -15,29 +50,17 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
   <link href="css/font-awesome.min.css" rel="stylesheet">  <!-- chargement icones Font Awesome-->
-
-    <style media="screen">
-      #login-form {
-        margin: 20px auto;
-        width:450px;
-
-      }
-
-      form {
-          margin: 10px;
-          padding:10px;
-      }
-
-      .panel-footer {
-        text-align: right;
-      }
-
-
-    </style>
-
+  <link href="style.css" rel="stylesheet"> <!-- chargement feuille style css-->
 
   </head>
   <body>
+
+<?php
+include("header.php");
+
+if (!isset($user)) { ?>
+
+
 
   <div class="panel-group">
 
@@ -46,15 +69,27 @@
         <div class="panel-heading">
             Identification
         </div>
+      <div class="fields">
+        <!-- si le login a échoué : afficher le message d'erreur -->
+            <?php /*if (isset($loginFailed)) */ echo $errorMessage;?>
 
-        <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post" id="login-form">
+        <form id="loginForm" action="formulaire.php" method="post" >
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">
+                <i class="fa fa fa-user-circle fa-fw" aria-hidden="true"></i>
+              </span>
+              <input id="chpPseudo" type="text" name="pseudo" class="form-control" placeholder="Votre pseudo" />
+            </div>
+          </div>
 
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-addon" id="basic-addon1">
                 <i class="fa fa fa-envelope-o fa-fw" aria-hidden="true"></i>
               </span>
-              <input id="chpMail" type="email" name="login" class="form-control" placeholder="Votre Email" />
+              <input id="chpMail" type="text" name="mail" class="form-control" placeholder="Votre Email" />
             </div>
           </div>
 
@@ -77,17 +112,28 @@
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox"> j’ai pas lu mais je suis d’accord
+              <input type="checkbox" name ="understand" value="understand"> j’ai pas lu mais je suis d’accord
             </label>
           </div>
-        </form>
 
-          <div class="panel-footer">
-              <button type="submit" class="btn btn-primary" form="loginForm">Valider</button>
-          </div>
-        </div>
+        </form>
       </div>
+        <div class="panel-footer">
+            <button type="submit" class="btn btn-primary" form="loginForm" name="button">Valider</button>
+        </div>
+
+      </div>
+
+    </div>
   </div>
+
+  <?php   }
+  else {
+
+  echo '<p class="loginOk">Votre compte a été créé '.$pseudo.' ! Un mail de confirmation a été envoyé à <span>' .$email; "</span> </p>";
+  };
+
+   ?>
 
   </body>
 </html>
