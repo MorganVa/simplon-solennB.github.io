@@ -1,9 +1,7 @@
-
 <?php
-
 $errorMessage = '';
 
-if ((isset($_POST['pseudo']))&&(isset($_POST['mail']))&&(isset($_POST['password']))&&(isset($_POST['confirmPassword']))&&(isset($_POST['understand']))) {
+if ((isset($_POST['pseudo']))&&(isset($_POST['mail']))&&(isset($_POST['password']))&&(isset($_POST['confirmPassword']))) {
 
   $pseudo = $_POST['pseudo'];
   $mdp = $_POST['password'];
@@ -14,20 +12,37 @@ if ((isset($_POST['pseudo']))&&(isset($_POST['mail']))&&(isset($_POST['password'
     if(strlen($mdp)>3 && strlen($mdpCOnfirm)>3 && strlen($email)>3 && strlen($pseudo)>3) {
 
         if($mdp === $mdpCOnfirm){
-          $user = [
-            "pseudo" => $pseudo,
-            "mail" => $email,
-            "password" => $mdp,
-          ];
+          if(isset($_POST['understand'])===true){
+            $user = [
+              "pseudo" => $pseudo,
+              "mail" => $email,
+              "password" => $mdp,
+            ];
           $loginFailed = false;
+          }else {
+            $loginFailed = true;
+            $errorMessage =
+            '<div class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span class="sr-only">Error:</span>
+              Vous n\'avez pas confirmé
+            </div>';
+          }
         }else {
           $loginFailed = true;
-          $errorMessage = '<div class="alert alert-danger">Erreur d\'identification, les MDP ne correspondent pas</div>';
+          $errorMessage =
+          '<div class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            Erreur d\'identification, les mots de passe ne correspondent pas.
+          </div>';
         }
+
     } else {
       $loginFailed = true;
-      $errorMessage = '<div class="alert alert-danger">Erreur d\'identification, 4 caractères minimum.</div>';
-    }
+      $errorMessage =
+      '<div class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        Erreur d\'identification, 4 caractères minimum.
+      </div>';     }
 }
 // afficher message erreur si rien n'est passé en variable ?
 
@@ -41,12 +56,12 @@ if ((isset($_POST['pseudo']))&&(isset($_POST['mail']))&&(isset($_POST['password'
 
   <!--   <link	href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     BOOTSTRAP & JQuery-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
   <link href="css/font-awesome.min.css" rel="stylesheet">  <!-- chargement icones Font Awesome-->
@@ -71,7 +86,7 @@ if (!isset($user)) { ?>
         </div>
       <div class="fields">
         <!-- si le login a échoué : afficher le message d'erreur -->
-            <?php /*if (isset($loginFailed)) */ echo $errorMessage;?>
+            <?php echo $errorMessage;?>
 
         <form id="loginForm" action="formulaire.php" method="post" >
 
